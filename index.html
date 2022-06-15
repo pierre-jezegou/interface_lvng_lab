@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <span class="menu"><i class="material-icons">menu</i></span>
+      </header>
+
+        <section class="main">
+        <aside class="keep">
+            <ul>
+                <li>
+                    <a href="/dashboard/">
+                    <span><i class="material-icons">home</i></span>
+                        Accueil
+                    <span class="notif red">1</span>
+                    </a>
+                </li>  
+                <li>
+                    <a href="/dashboard/">
+                    <span><i class="material-icons">dashboard</i></span>
+                        Dashboard
+                    <span class="notif red">1</span>
+                    </a>
+                </li>      
+                <li>
+                    <a href="/">
+                    <span><i class="material-icons">insights</i></span>
+                        Statistiques
+                    <span class="notif yellow">2</span>
+                    </a>
+                </li>    
+                <li>
+                    <a href="/">
+                    <span><i class="material-icons">explore</i></span>
+                        Carte
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                    <span><i class="material-icons">settings</i></span>
+                        Réglages
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <article>
+            <div class="entete_section">
+                <h1>
+                    Données patient
+                </h1>
+                <div class="choice">
+                    Essai
+                </div>
+            </div>
+
+            <!-- Bilan rapide des constantes de l'environnement -->
+            <div class="overview">
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">schedule</i></span>
+                        Nom
+                    </div>
+                    <div class="block_content names">
+                        Martin
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">schedule</i></span>
+                        Prénom
+                    </div>
+                    <div class="block_content names">
+                        Matin
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">schedule</i></span>
+                        Heure entrée
+                    </div>
+                    <div class="block_content">
+                        13:35
+                    </div>
+                </div>
+        
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">face</i></span>
+                        Age patient
+                    </div>
+                    <div class="block_content">
+                        65<span class="unit">y.o.</span> 
+                    </div>
+                </div>
+        
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">water_drop</i></span>
+                        Temp. eau
+                    </div>
+                    <div class="block_content">
+                        14<span class="unit">°C</span> 
+                    </div>
+                </div>
+        
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">speed</i></span>
+                        Pression
+                    </div>
+                    <div class="block_content">
+                        1013 <span class="unit">mPa</span> 
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_title">
+                        <span><i class="material-icons icon-size">water_drop</i></span>
+                        Humidité
+                    </div>
+                    <div class="block_content">
+                        58 <span class="unit">%</span> 
+                    </div>
+                </div>
+        
+            </div>
+        
+            <!-- ================================================ ALERTS ================================================ -->
+            <div class="entete_section">
+                <h1>
+                    Alertes & Notifications
+                </h1>
+                <div class="choice">
+                    <div class="multi-button">
+                        <div class="button searchfield">
+                            <input type="text" class="search">
+                            <a class="button" href="/"><span><i class="material-icons selection_button_alert">search</i></span></a>
+                        </div>
+                        <a class="button" href="/"><span><i class="material-icons selection_button_alert">filter_list</i></span></a>
+                        <div class="vertical_divider"></div>
+                        <a class="button" href="/essai"><span><i class="material-icons selection_button_alert">report</i></span></a>
+                        <a class="button" href="/"><span><i class="material-icons selection_button_alert">warning</i></span></a>
+                        <a class="button" href="/"><span><i class="material-icons selection_button_alert">info</i></span></a>
+                        <a class="button" href="/"><span><i class="material-icons selection_button_alert">notifications_active</i></span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alerts_section">
+
+                <div class="alert critique">
+                    <div class="alert_level">
+                        <span><i class="material-icons selection_button type_report">report</i></span>
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_state">
+                        <i class="material-icons alert_state_text">task_alt</i>
+                        <br>
+                        Réglé
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_timestamp">
+                        11 mai 2022 23:56:54
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_domain">
+                        Contre-indication
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="description">
+                        <div class="alert_title">
+                            LORAZÉPAM MYLAN 2,5 mg
+                        </div>
+                        <div class="alert_description">
+                            Prescription : 14 semaines
+                        </div>
+                    </div>
+                    
+                    <div class="vertical_divider"></div>
+                    <div class="alert_complement">
+                        Durée de traitement dépassée
+                    </div>
+                </div>
+
+                <div class="alert">
+                    <div class="alert_level">
+                        <span><i class="material-icons selection_button type_alert">warning</i></span>
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_state">
+                        <i class="material-icons alert_state_text">task_alt</i>
+                        <br>
+                        Réglé
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_timestamp">
+                        11 mai 2022 23:45:54
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_domain">
+                        Association déconseillée
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="description">
+                        <div class="alert_title">
+                            LORAZÉPAM MYLAN 2,5 mg
+                        </div>
+                        <div class="alert_description">
+                            Prescription : 14 semaines
+                        </div>
+                    </div>
+                    
+                    <div class="vertical_divider"></div>
+                    <div class="alert_complement">
+                        Durée de traitement dépassée
+                    </div>
+                </div>
+
+
+
+                <div class="alert">
+                    <div class="alert_level">
+                        <span><i class="material-icons selection_button type_info">information</i></span>
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_state">
+                        <i class="material-icons alert_state_text">task_alt</i>
+                        <br>
+                        Réglé
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_timestamp">
+                        11 mai 2022 12:34:22
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_domain">
+                        Précaution d’emploi
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="description">
+                        <div class="alert_title">
+                            LORAZÉPAM MYLAN 2,5 mg
+                        </div>
+                        <div class="alert_description">
+                            Prescription : 14 semaines
+                        </div>
+                    </div>
+                    
+                    <div class="vertical_divider"></div>
+                    <div class="alert_complement">
+                        Durée de traitement dépassée
+                    </div>
+                </div>
+
+                <div class="alert">
+                    <div class="alert_level">
+                        <span><i class="material-icons selection_button type_notification">notifications_active</i></span>
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_state">
+                        <i class="material-icons alert_state_text">task_alt</i>
+                        <br>
+                        Réglé
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_timestamp">
+                        11 mai 2022 23:56:54
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="alert_domain">
+                        À prendre en compte
+                    </div>
+                    <div class="vertical_divider"></div>
+                    <div class="description">
+                        <div class="alert_title">
+                            LORAZÉPAM MYLAN 2,5 mg
+                        </div>
+                        <div class="alert_description">
+                            Prescription : 14 semaines
+                        </div>
+                    </div>
+                    
+                    <div class="vertical_divider"></div>
+                    <div class="alert_complement">
+                        Durée de traitement dépassée
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- ================================================ DASHBOARD ================================================ -->
+
+
+
+            <div class="entete_section">
+                <h1>
+                    Dashboard
+                </h1>
+                <div class="choice">
+                    <div class="multi-button">
+                    <a class="button" href="/essai"><span><i class="material-icons selection_button">dashboard</i></span></a>
+                    <a class="button" href="/"><span><i class="material-icons selection_button">list</i></span></a>
+                    <a class="button" href="/"><span><i class="material-icons selection_button">query_stats</i></span></a>
+                    </div>
+                </div>
+            </div>
+<!--             
+            <div class="wrapper">
+                <div class="tile">
+                    <div class="infos_tile">
+                        <div class="title">
+                            Vitesse
+                        </div>
+                        <div class="tile_informations">
+                            <a href="?" class="graphlink">En voir plus</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="content">
+                        <div class="body">
+                            <div class="main_vitesse">
+                                <div class="vitesse">
+                                    12.6
+                                </div>
+                                <div class="other_vitesse">
+                                    <div class="info_vitesse">
+                                        9.7 <span class="unit">AVG</span> 
+                                    </div>
+                                    <div class="info_vitesse">
+                                        17.1 <span class="unit">MAX</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details_vitesse">
+            
+                            </div>
+                        </div>
+                
+                        <div class="tile_footer">
+                            Footer
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="tile">
+                    <div class="infos_tile">
+                        <div class="title">
+                            Vitesse
+                        </div>
+                        <div class="tile_informations">
+                            <a href="?" class="graphlink">En voir plus</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="content">
+                        <div class="body">
+                            <div class="main_vitesse">
+                                <div class="vitesse">
+                                    12.6
+                                </div>
+                                <div class="other_vitesse">
+                                    <div class="info_vitesse">
+                                        9.7 AVG
+                                    </div>
+                                    <div class="info_vitesse">
+                                        17.1 MAX
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details_vitesse">
+            
+                            </div>
+                        </div>
+                
+                        <div class="tile_footer">
+                            Footer
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="tile">
+                    <div class="infos_tile">
+                        <div class="title">
+                            Vitesse
+                        </div>
+                        <div class="tile_informations">
+                            <a href="?" class="graphlink">En voir plus</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="content">
+                        <div class="body">
+                            <div class="main_vitesse">
+                                <div class="vitesse">
+                                    12.6
+                                </div>
+                                <div class="other_vitesse">
+                                    <div class="info_vitesse">
+                                        9.7 AVG
+                                    </div>
+                                    <div class="info_vitesse">
+                                        17.1 MAX
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details_vitesse">
+            
+                            </div>
+                        </div>
+                
+                        <div class="tile_footer">
+                            Footer
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="tile">
+                    <div class="infos_tile">
+                        <div class="title">
+                            Vitesse
+                        </div>
+                        <div class="tile_informations">
+                            <a href="?" class="graphlink">En voir plus</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="content">
+                        <div class="body">
+                            <div class="main_vitesse">
+                                <div class="vitesse">
+                                    12.6
+                                </div>
+                                <div class="other_vitesse">
+                                    <div class="info_vitesse">
+                                        9.7 AVG
+                                    </div>
+                                    <div class="info_vitesse">
+                                        17.1 MAX
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details_vitesse">
+            
+                            </div>
+                        </div>
+                
+                        <div class="tile_footer">
+                            Footer
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="tile">
+                    <div class="infos_tile">
+                        <div class="title">
+                            Vitesse
+                        </div>
+                        <div class="tile_informations">
+                            <a href="?" class="graphlink">En voir plus</a>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="content">
+                        <div class="body">
+                            <div class="main_vitesse">
+                                <div class="vitesse">
+                                    12.6
+                                </div>
+                                <div class="other_vitesse">
+                                    <div class="info_vitesse">
+                                        9.7 AVG
+                                    </div>
+                                    <div class="info_vitesse">
+                                        17.1 MAX
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details_vitesse">
+            
+                            </div>
+                        </div>
+                
+                        <div class="tile_footer">
+                            Footer
+                        </div>
+                    </div>
+                    
+                </div> -->
+
+
+
+            </div>
+    
+          
+        </article>
+      </section>
+
+    
+</body>
+</html>
